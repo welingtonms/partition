@@ -1,5 +1,5 @@
 function partition<T>(
-  collection: Array<T>,
+  collection: Array<T> | null | undefined,
   predicate: (item: T) => string
 ): Record<string, Array<T>> {
   const safeCollection = collection || [];

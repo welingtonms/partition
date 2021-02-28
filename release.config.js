@@ -17,6 +17,12 @@ module.exports = {
     ],
     '@semantic-release/release-notes-generator',
     [
+      '@semantic-release/changelog',
+      {
+        changelogFile: 'CHANGELOG.md',
+      },
+    ],
+    [
       '@semantic-release/npm',
       {
         npmPublish: true,
@@ -31,7 +37,7 @@ module.exports = {
     [
       '@semantic-release/git',
       {
-        assets: ['dist/**/*.{js,map}', 'package.json'],
+        assets: ['dist/**/*.{js,map}', 'package.json', 'CHANGELOG.md'],
         message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
       },
     ],
