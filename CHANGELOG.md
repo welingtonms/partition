@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/cheesebit/partition/compare/v1.0.0...v1.1.0) (2021-02-28)
+
+
+### Features
+
+* adjust bundle module format ([0314b87](https://github.com/cheesebit/partition/commit/0314b87a74effe8e81fc89447d79a8eae8c1794a))
+
 # 1.0.0 (2021-02-28)
 
 
