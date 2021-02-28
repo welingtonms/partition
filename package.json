@@ -2,9 +2,7 @@
   "name": "@cheesebit/partition",
   "version": "1.0.0",
   "description": "Creates an object splitting given collection into groups, based on the return of the given predicate when invoked with each collection's item.",
-  "browser": "dist/partition.umd.js",
-  "main": "dist/partition.cjs.js",
-  "module": "dist/partition.esm.js",
+  "module": "dist/partition.js",
   "types": "dist/types",
   "files": [
     "dist"

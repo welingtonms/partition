@@ -6,32 +6,24 @@ import del from 'rollup-plugin-delete';
 import pkg from './package.json';
 import resolve from '@rollup/plugin-node-resolve';
 import ts from '@rollup/plugin-typescript';
-import typescript from 'typescript'
+import typescript from 'typescript';
 
 module.exports = {
-    input: 'src/index.ts',
-    output: [
-      {
-        name: 'partition',
-        file: pkg.browser,
-        format: 'umd',
-      },
-      { name: 'partition', file: pkg.main, format: 'cjs' },
-      { name: 'partition', file: pkg.module, format: 'es' },
-    ],
-    plugins: [
-      del({ targets: [`dist/`] }),
-      ts({ typescript,tsconfig: './tsconfig.json' }),
-      resolve(), // so Rollup can find `ms`
-      commonjs(), // so Rollup can convert `ms` to an ES module
-      babel({
-        exclude: 'node_modules/**', // only transpile our source code
-      }),
-      terser(),
-      analyze({
-        hideDeps: true,
-        summaryOnly: true,
-        filter: module => /^\/src/.test(module.id),
-      }),
-    ],
-  };
+  input: 'src/index.ts',
+  output: [{ name: 'partition', file: pkg.module, format: 'es' }],
+  plugins: [
+    del({ targets: [`dist/`] }),
+    ts({ typescript, tsconfig: './tsconfig.json' }),
+    resolve(), // so Rollup can find `ms`
+    commonjs(), // so Rollup can convert `ms` to an ES module
+    babel({
+      exclude: 'node_modules/**', // only transpile our source code
+    }),
+    terser(),
+    analyze({
+      hideDeps: true,
+      summaryOnly: true,
+      filter: module => /^\/src/.test(module.id),
+    }),
+  ],
+};
