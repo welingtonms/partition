@@ -1,4 +1,4 @@
-# @cheesebit/partition
+# partition
 
 [![Coverage Status](https://img.shields.io/coveralls/github/cheesebit/partition?style=flat-square)](https://coveralls.io/github/cheesebit/partition)
 [![npm package](https://img.shields.io/npm/v/@cheesebit/partition?style=flat-square)](https://www.npmjs.com/package/@cheesebit/partition)
