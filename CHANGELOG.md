@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/welingtonms/partition/compare/v1.1.0...v1.1.1) (2022-06-20)
+
+
+### Bug Fixes
+
+* change workflow to use yarn ([ae7070f](https://github.com/welingtonms/partition/commit/ae7070f5278f0e16bc85a165668b13250e6335bf))
+* config improvements ([cff523c](https://github.com/welingtonms/partition/commit/cff523c98bcbcbb9f16650f1b21cdab808cbbab4))
+
 # [1.1.0](https://github.com/cheesebit/partition/compare/v1.0.0...v1.1.0) (2021-02-28)
 
 

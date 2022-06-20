@@ -1,6 +1,6 @@
 {
 	"name": "@welingtonms/partition",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "Creates an object splitting given collection into groups, based on the return of the given predicate when invoked with each item in the collection.",
 	"module": "dist/partition.js",
 	"files": [
